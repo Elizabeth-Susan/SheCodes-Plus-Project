@@ -1,1 +1,78 @@
+body {
+  color: #222831;
+  font-family: "Merienda", cursive;
+}
 
+h1 {
+  background: #e6739f;
+  border-radius: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding: 4px;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+marquee {
+  font-size: 20px;
+}
+
+.weather-app {
+  background: #e1bee7;
+  border: 3px solid #790c5a;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.information {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.city {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.more-information {
+  border: 2px solid #790c5a;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+}
+
+.gif-image {
+  border-radius: 20px;
+  display: block;
+  float: right;
+  margin-bottom: 10px;
+  width: 260px;
+}
+
+.footer {
+  padding: 10px 0;
+  text-align: center;
+}
