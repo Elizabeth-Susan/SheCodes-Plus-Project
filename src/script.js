@@ -69,7 +69,6 @@ function dateSuffix(d) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
   let descriptionElement = document.querySelector("#description");
@@ -78,7 +77,8 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
   let dateElement = document.querySelector("#date");
-  let timeElement = document.querySelector("#time");
+  let localTime = document.querySelector("#date");
+  let timeZone = response.data.timezone;
 
   celciusTemperature = response.data.main.temp;
   celciusLink.classList.add("active");
@@ -96,8 +96,6 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   dateElement.innerHTML = dateFormat(response.data.dt * 1000);
-  let timeZone = response.data.timezone;
-  let localTime = document.querySelector("#date");
 
   let days = [
     "Sunday",
@@ -165,7 +163,6 @@ function displayForecast(response) {
 
   for (let index = 0; index < 6; index++) {
     forecast = response.data.list[index];
-    console.log(forecast);
 
     forecastElement.innerHTML += `
         <div class ="col-2">
