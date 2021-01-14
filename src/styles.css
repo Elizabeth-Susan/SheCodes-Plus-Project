@@ -68,10 +68,32 @@ marquee {
   margin-bottom: 10px;
 }
 
+.weather-temperature img {
+  height: 90px;
+  margin-right: 10px;
+  width: 90px;
+  position: relative;
+  top: -15px;
+}
+
 .weather-temperature strong {
   font-size: 55px;
   font-weight: 400;
   line-height: 1;
+}
+
+.weather-temperature .units {
+  position: relative;
+  top: -28px;
+}
+
+.weather-temperature .active {
+  color: #222831;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
 
 .gif-image {
