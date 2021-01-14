@@ -104,6 +104,21 @@ marquee {
   width: 260px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+}
+
+.weather-forecast,
+.weather-forecast-temperature {
+  text-align: center;
+  font-weight: 400;
+}
+
 .footer {
   padding: 10px 0;
   text-align: center;
