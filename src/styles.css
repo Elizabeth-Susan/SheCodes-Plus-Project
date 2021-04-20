@@ -1,26 +1,33 @@
+:root {
+  --primary-color: #e1bee7;
+  --heading-background-color: #e6739f;
+  --border-color: #790c5a;
+  --text-color: #222831;
+  --font-family: "Merienda", cursive;
+}
+
 body {
-  color: #222831;
-  font-family: "Merienda", cursive;
+  color: var(--text-color);
+  font-family: var(--font-family);
 }
 
 h1 {
-  background: #e6739f;
-  border-radius: 30px;
+  background: var(--heading-background-color);
+  border-radius: 20px;
   font-weight: 900;
   margin-bottom: 20px;
-  padding: 4px;
+  padding: 5px;
   text-align: center;
 }
 
-ul {
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 
 li {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 li:first-letter {
@@ -32,12 +39,12 @@ marquee {
 }
 
 .weather-app {
-  background: #e1bee7;
-  border: 3px solid #790c5a;
+  background: var(--primary-color);
+  border: 3px solid var(--border-color);
   border-radius: 10px;
   max-width: 700px;
   margin: 20px auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 .information {
@@ -56,7 +63,7 @@ marquee {
 }
 
 .more-information {
-  border: 2px solid #790c5a;
+  border: 2px solid var(--border-color);
   border-radius: 30px;
   font-size: 20px;
   font-weight: 600;
@@ -88,7 +95,7 @@ marquee {
 }
 
 .weather-temperature .active {
-  color: #222831;
+  color: var(--text-color);
   cursor: default;
 }
 
@@ -120,6 +127,6 @@ marquee {
 }
 
 .footer {
-  padding: 10px 0;
+  margin-bottom: 20px;
   text-align: center;
 }
