@@ -27,15 +27,7 @@
       <div class="weather-app">
         <h1>What is the forecast for today?</h1>
         <div class="row">
-          <div class="col-6">
-            <ul class="information">
-              <li class="city" id="city"></li>
-              <li>
-                <span class="date" id="date"></span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6">
+          <div class="col-md-6">
             <form id="search-form">
               <input
                 type="search"
@@ -45,18 +37,28 @@
                 autocomplete="off"
                 autofocus="on"
               />
-              <button type="submit" class="btn btn-primary mr-3" w-100>
-                <span class="fas fa-search-location"></span> Search
-              </button>
-              <button
-                type="submit"
-                class="btn btn-danger"
-                id="my-location-button"
-                w-100
-              >
-                <span class="fas fa-location-arrow"></span> My Location
-              </button>
+              <div class="buttons mb-3">
+                <button type="submit" class="btn btn-primary mr-3">
+                  <span class="fas fa-search-location"></span
+                  > <span>Search</span>
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-danger"
+                  id="my-location-button"
+                >
+                  <span class="fas fa-location-arrow"></span> <span>My Location</span>
+                </button>
+              </div>
             </form>
+          </div>
+          <div class="col-md-6">
+            <ul class="information">
+              <li class="city" id="city"></li>
+              <li>
+                <span class="date" id="date"></span>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="row">
@@ -91,10 +93,25 @@
       </div>
       <footer class="footer">
         Coded by
-        <a href="https://www.linkedin.com/in/elizabeth-samuel-30886a46/" target="_blank"> Elizabeth Samuel </a> 🙌
+        <a
+          href="https://www.linkedin.com/in/elizabeth-samuel-30886a46/"
+          target="_blank"
+        >
+          Elizabeth Samuel
+        </a>
+        🙌
         <br />
-        <a href="https://github.com/Elizabeth-Susan/SheCodes-Plus-Project" target="_blank"> Open sourced on GitHub </a> and
-        <a href="https://cranky-easley-a543f9.netlify.app/" target="_blank">hosted on Netlify </a> 👩‍💻
+        <a
+          href="https://github.com/Elizabeth-Susan/SheCodes-Plus-Project"
+          target="_blank"
+        >
+          Open sourced on GitHub
+        </a>
+        and
+        <a href="https://cranky-easley-a543f9.netlify.app/" target="_blank"
+          >hosted on Netlify
+        </a>
+        👩‍💻
       </footer>
     </div>
     <script src="src/script.js"></script>
