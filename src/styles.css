@@ -125,6 +125,7 @@ button span {
 
 .weather-forecast {
   margin-top: 20px;
+  justify-content: space-evenly;
 }
 
 .weather-forecast img {

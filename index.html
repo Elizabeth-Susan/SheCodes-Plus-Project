@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Have a look at the present weather conditions at your next destination and current location"
+    />
     <title>Weather Application</title>
     <link
       rel="stylesheet"
@@ -38,7 +42,11 @@
                 autofocus="on"
               />
               <div class="buttons mb-3">
-                <button type="submit" class="btn btn-primary mr-3">
+                <button
+                  type="submit"
+                  class="btn btn-primary mr-3"
+                  title="Try me!"
+                >
                   <span class="fas fa-search-location"></span>
                   <span>Search</span>
                 </button>
@@ -46,6 +54,7 @@
                   type="submit"
                   class="btn btn-danger"
                   id="my-location-button"
+                  title="Where am I now?"
                 >
                   <span class="fas fa-location-arrow"></span>
                   <span>My Location</span>
@@ -64,13 +73,22 @@
         </div>
         <div class="row">
           <div class="col-sm-6">
-            <div class="clearfix weather-temperature align-content-center">
-              <img src="" alt="" id="icon" class="float-left" />
+            <div class="clearfix weather-temperature">
+              <img src="" alt="weather icon" id="icon" class="float-left" />
               <span class="float-left">
                 <strong id="temperature"></strong>
                 <span class="units"
-                  ><a href="#" id="celcius-link" class="active">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a></span
+                  ><a
+                    href="#"
+                    id="celcius-link"
+                    class="active"
+                    title="convert to celcius"
+                    >°C</a
+                  >
+                  |
+                  <a href="#" id="fahrenheit-link" title="convert to fahrenheit"
+                    >°F</a
+                  ></span
                 >
               </span>
             </div>
@@ -84,7 +102,11 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <img src="giphy.gif" alt="weather changes" class="gif-image d-none d-md-block" />
+            <img
+              src="giphy.gif"
+              alt="weather changes gif"
+              class="gif-image d-none d-md-block"
+            />
           </div>
         </div>
         <marquee
@@ -97,6 +119,7 @@
         <a
           href="https://www.linkedin.com/in/elizabeth-samuel-30886a46/"
           target="_blank"
+          title="Elizabeth's LinkedIn profile"
         >
           Elizabeth Samuel
         </a>
@@ -105,11 +128,15 @@
         <a
           href="https://github.com/Elizabeth-Susan/SheCodes-Plus-Project"
           target="_blank"
+          title="Detailed code"
         >
           Open sourced on GitHub
         </a>
         and
-        <a href="https://cranky-easley-a543f9.netlify.app/" target="_blank"
+        <a
+          href="https://cranky-easley-a543f9.netlify.app/"
+          target="_blank"
+          title="Hosted link"
           >hosted on Netlify
         </a>
         👩‍💻
