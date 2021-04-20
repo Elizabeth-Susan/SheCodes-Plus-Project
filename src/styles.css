@@ -38,6 +38,7 @@ li:first-letter {
 
 marquee {
   font-size: 20px;
+  margin-top: 10px;
 }
 
 button span {
@@ -84,10 +85,6 @@ button span {
 .buttons {
   display: flex;
   justify-content: space-evenly;
-}
-
-.weather-temperature {
-  margin-bottom: 10px;
 }
 
 .weather-temperature img {
