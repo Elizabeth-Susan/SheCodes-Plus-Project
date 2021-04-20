@@ -9,12 +9,14 @@
 body {
   color: var(--text-color);
   font-family: var(--font-family);
+  overflow-x: hidden;
 }
 
 h1 {
   background: var(--heading-background-color);
   border-radius: 20px;
   font-weight: 900;
+  font-size: 35px;
   margin-bottom: 20px;
   padding: 5px;
   text-align: center;
@@ -36,6 +38,10 @@ li:first-letter {
 
 marquee {
   font-size: 20px;
+}
+
+.container {
+  margin: 0;
 }
 
 .weather-app {
@@ -129,4 +135,10 @@ marquee {
 .footer {
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media (max-width: 780px) {
+  h1 {
+    font-size: 25px;
+  }
 }
