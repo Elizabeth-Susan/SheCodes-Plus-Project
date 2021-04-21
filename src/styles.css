@@ -45,10 +45,6 @@ button span {
   font-size: 15px;
 }
 
-.container {
-  margin: 0;
-}
-
 .weather-app {
   background: var(--primary-color);
   border: 3px solid var(--border-color);
@@ -155,5 +151,13 @@ button span {
 
   .information .date {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .weather-temperature {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
   }
 }
